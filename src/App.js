@@ -1,33 +1,12 @@
-import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './header'
+import Navbar from './navbar'
 const navbar = () => {
-   const handleSelect = (eventKey) => alert(`selected ${eventKey}`);
   return (
-   <Nav variant="pills" activeKey="1" onSelect={handleSelect}className='bg-dark py-2 px-4'>
-      <Nav.Item>
-        <Nav.Link eventKey="1" href="#/home"className='text-white'>
-          NavLink 1 content
-        </Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link eventKey="2" title="Item"className='text-white'>
-          NavLink 2 content
-        </Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link eventKey="3" disabled className='text-white'>
-          NavLink 3 content
-        </Nav.Link>
-      </Nav.Item>
-      <NavDropdown title="Dropdown" id="nav-dropdown">
-        <NavDropdown.Item eventKey="4.1">Action</NavDropdown.Item>
-        <NavDropdown.Item eventKey="4.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item eventKey="4.3">Something else here</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
-      </NavDropdown>
-    </Nav>
+    <div>
+    <Header/>
+    <Navbar/>
+    </div>
   );
 }
 
