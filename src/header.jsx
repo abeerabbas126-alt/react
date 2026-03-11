@@ -1,5 +1,4 @@
-import React from 'react'
-import { BrowserRouter,Route,router,Routes,Link } from 'react-router-dom'
+import { BrowserRouter,Route,Routes } from 'react-router-dom'
 import Aboute from './aboute'
 import Help from './help'
 import Servise from './servise'
